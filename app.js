@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 '#9EBC9F'
 ]
 
-    //The Tetrominoes
+//The Tetrominoes
     const lTetromino = [
 [1, width + 1, width * 2 + 1, 2],
 [width, width + 1, width + 2, width * 2 + 2],
@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[currentPosition + index].style.backgroundColor = colors[random]
         })
     }
-//I don't think I need the draw below
-//    draw()
+
 
     //undraw the Tetromino
     function undraw() {
@@ -82,8 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    //make the Tetromino move down each second
-    //timerID = setInterval(moveDown, 1000);
 
     //assign functions to keyCodes
     function control(e) {
